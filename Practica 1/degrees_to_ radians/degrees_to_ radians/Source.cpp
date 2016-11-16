@@ -12,12 +12,12 @@ int main()
 		scanf("%f%c", &ang, &meas);
 		if (meas == 'D' || meas == 'd')
 		{
-		printf("R=%1.2f Press enter to continue.", pi / 180 * ang);
+		printf("R=%1.2f \n Press enter to continue.", pi / 180 * ang);
 		}
 		else 
 			if (meas == 'R' || meas == 'r')
 			{
-				 printf("D=%1.2f Press enter to continue.", 180 / pi*ang);
+				 printf("D=%1.2f \n Press enter to continue.", 180 / pi*ang);
 			}
 			else 
 			{
