@@ -1,8 +1,0 @@
-﻿  Source.cpp
-c:\users\марина\documents\visual studio 2015\projects\ft_cm\ft_cm\source.cpp(11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\users\марина\documents\visual studio 2015\projects\ft_cm\ft_cm\source.cpp(10): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
-c:\users\марина\documents\visual studio 2015\projects\ft_cm\ft_cm\source.cpp(13): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
-  ft_cm.vcxproj -> c:\users\марина\documents\visual studio 2015\Projects\ft_cm\Debug\ft_cm.exe
-  ft_cm.vcxproj -> c:\users\марина\documents\visual studio 2015\Projects\ft_cm\Debug\ft_cm.pdb (Full PDB)

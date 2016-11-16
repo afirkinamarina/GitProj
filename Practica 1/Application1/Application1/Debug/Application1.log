@@ -1,5 +1,0 @@
-﻿  main.cpp
-c:\users\марина\documents\visual studio 2015\projects\application1\application1\main.cpp(14): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1270): note: see declaration of 'scanf'
-  Application1.vcxproj -> C:\Users\Марина\Documents\Visual Studio 2015\Projects\Application1\Debug\Application1.exe
-  Application1.vcxproj -> C:\Users\Марина\Documents\Visual Studio 2015\Projects\Application1\Debug\Application1.pdb (Full PDB)

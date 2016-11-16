@@ -1,7 +1,0 @@
-﻿  Source.cpp
-c:\users\марина\documents\visual studio 2015\projects\date_time\date_time\source.cpp(65): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\conio.h(452): note: see declaration of 'getch'
-c:\users\марина\documents\visual studio 2015\projects\date_time\date_time\source.cpp(76): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\string.h(453): note: see declaration of 'strtok'
-  Date_time.vcxproj -> c:\users\марина\documents\visual studio 2015\Projects\Date_time\Debug\Date_time.exe
-  Date_time.vcxproj -> c:\users\марина\documents\visual studio 2015\Projects\Date_time\Debug\Date_time.pdb (Full PDB)
