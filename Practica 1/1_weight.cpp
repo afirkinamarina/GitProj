@@ -1,7 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
-#include<stdlib.h>
-#include<string.h>
 
 int main(void)
 {
@@ -34,8 +31,7 @@ int main(void)
 				printf("\n\t You need to lose weight");
 			}
 		}
-		else
-			if (ch == 'm')
+		else if (ch == 'm')
 			{
 				if ((c > 19) && (c < 25))
 				{
