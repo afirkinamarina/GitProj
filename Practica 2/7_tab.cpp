@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main()
 {
-	int const n = 256;
 	char t[300] = "", str[300] = "";
 	int counter = 0, counter1 = 0;
 	printf("Input string: ");
