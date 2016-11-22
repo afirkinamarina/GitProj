@@ -22,7 +22,7 @@ int main()
 				strcpy(num, empty);
 			}
 
-			if ((str[j+1] < '0' || str[j+1] > '9')|| (isspace(str[j + 1])))
+			if ((str[j+1] < '0' || str[j+1] > '9')||(isspace(str[j + 1])))
 			{
 				sum =sum+ atoi(num);
 				strcpy(num, empty);

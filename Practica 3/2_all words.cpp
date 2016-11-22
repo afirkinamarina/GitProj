@@ -30,7 +30,7 @@ int main()
 	if (isspace(str[0]))
 		printf("\nThe number of words: %i", counter - 1);
 	else
-		printf("\nThe number of words: %i", counter - 1);
+		printf("\nThe number of words: %i", counter);
 	getchar();
 	return 0;
 }
