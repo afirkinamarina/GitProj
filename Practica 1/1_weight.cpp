@@ -1,47 +1,47 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main(void)
+int main()
 {
-	char ch;
-	float a, b, c, metr;
+	char gender;
+	float weight, height, coefficient, metr;
 
 	printf("\n\t Enter your gender (m/f):");
-	scanf("%c", &ch);
-	if ((ch == 'f') || (ch == 'm'))
+	scanf("%c", &gender);
+	if ((gender == 'f') || (gender == 'm'))
 	{
 		printf("\t Enter your weight: ");
-		scanf_s("%f", &a);
+		scanf_s("%f", &weight);
 		printf("\t Enter your height (cm): ");
-		scanf_s("%f", &b);
-		metr = b / 100;
-		c = a / (metr * metr);
-		printf("\t IMT=%1.2f", c);
-		if (ch == 'f')
+		scanf_s("%f", &height);
+		metr = height / 100;
+        coefficient = weight / (metr * metr);
+		printf("\t IMT=%1.2f", coefficient);
+		if (gender == 'f')
 		{
-			if ((c > 19) && (c < 24))
+			if ((coefficient > 19) && (coefficient < 24))
 			{
 				printf("\n\t Your weight is normal ");
 			}
-			if (c < 19)
+			else if (coefficient < 19)
 			{
 				printf("\n\t You need to gain weight");
 			}
-			if (c > 24)
+			else if (coefficient > 24)
 			{
 				printf("\n\t You need to lose weight");
 			}
 		}
-		else if (ch == 'm')
+		else if (gender == 'm')
 			{
-				if ((c > 19) && (c < 25))
+				if ((coefficient > 19) && (coefficient < 25))
 				{
 					printf("\n\t Your weight is normal");
 				}
-				if (c < 19)
+				else if (coefficient < 19)
 				{
 					printf("\n\t You need to gain weight");
 				}
-				if (c > 25)
+				else if (coefficient > 25)
 				{
 					printf("\n\t You need to lose weight");
 				}

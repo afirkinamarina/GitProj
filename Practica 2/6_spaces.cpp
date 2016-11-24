@@ -1,13 +1,13 @@
-#include  <stdio.h>
+#include <stdio.h>
 #include <locale.h>
 #include <string.h>
 
 int main() 
 {
-	setlocale(LC_ALL, "");
-	char str[101] = "";
+    const int len = 101;
+	char str[len] = "";
 	printf("Enter the string:");
-	fgets(str, 101, stdin);
+	fgets(str, len, stdin);
 	int g = 0;
 	while (str[g] == ' ')
 	{
@@ -37,4 +37,5 @@ int main()
 	}
 	printf("\nCorrect string:%s", str);
 	getchar();
+    return 0;
 }

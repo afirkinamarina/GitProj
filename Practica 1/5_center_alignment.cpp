@@ -1,5 +1,5 @@
-#include<stdio.h>
-#include<conio.h>
+#include <stdio.h>
+#include <conio.h>
 
 int len(const char * s) 
 {
@@ -16,8 +16,8 @@ int main()
 	printf("Please enter a string:\n");
 	scanf("%s", &str);
 	int length = len(str);
-	int i, spase = (size - length) / 2;
-	for (i = 0; i < spase; i++)
+	int spase = (size - length) / 2;
+	for (int i = 0; i < spase; i++)
 	{
 		printf(" ");
 	}

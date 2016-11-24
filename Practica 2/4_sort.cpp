@@ -6,10 +6,10 @@
 int main()
 {
 	//line generation
-
-	int choose, len = 8;
+    const int len = 8;
+	int choose;
 	srand(time(NULL));
-	char exchange, newstring[8];
+    char exchange, newstring[len] = "", newstring1[len] = "", ex[2] = "", empty[len] = "";
 	for (int k = 0; k<len; k++)
 	{
 		choose = rand() % 2;
@@ -35,15 +35,18 @@ int main()
 	for (int i = 0; i < len; i++)
 		if (newstr[i] < '0' || newstr[i] > '9')
 		{
-			exchange2 = newstr[i];
-			printf("%c", exchange2);
+            exchange2 = newstr[i];
+            ex[0] = exchange2;
+			strcat(newstring1, ex);
 		}
 	for (int j = 0; j <len; j++)
 		if (newstr[j] >= '0' && newstr[j] <= '9')
 		{
-			exchange2 = newstr[j];
-			printf("%c", exchange2);
+            exchange2 = newstr[j];
+            ex[0] = exchange2;
+            strcat(newstring1, ex);
 		}
-	getch();
+    printf ("%s",newstring1);
+	getchar();
 	return 0;
 }

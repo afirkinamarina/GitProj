@@ -5,7 +5,6 @@
 # define DELAY 500
 int main()
 {
-	int i;
 	const float g = 9.81;
 	float height, way, time, height2;
 	printf("\n Enter the height: ");
@@ -14,7 +13,7 @@ int main()
 	time = floor(time);
 	clock_t now, delay;
 	height2 = height;
-	for (i = 0; i < time+1; i++)
+	for (int i = 0; i < time+1; i++)
 	{
 		way = (g*(i*i)) / 2;
 		height2 = height - way;
