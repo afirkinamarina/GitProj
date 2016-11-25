@@ -5,37 +5,32 @@
 int main() 
 {
     const int len = 101;
-	char str[len] = "";
-	printf("Enter the string:");
-	fgets(str, len, stdin);
-	int g = 0;
-	while (str[g] == ' ')
-	{
-		if (str[g] == ' ')
-		{
-			for (int j = 0; j < strlen(str); j++)
-			{
-				str[j] = str[j + 1];
-			}
-		}
-	}
+    char str[len] = "";
+    printf("Enter the string:");
+    fgets(str, len, stdin);
+    int g = 0;
 
-	for (int i = 0; i<strlen(str); i++) 
-	{
-		if (str[i] == ' ')
-		{
-			if (str[i + 1] == ' ')
-			{
-				for (int k = (i + 1); k < strlen(str); k++)
-				{
-					str[k] = str[k + 1];
-					i = 0;
-				}
-				continue;
-			}
-		}
-	}
-	printf("\nCorrect string:%s", str);
-	getchar();
+    while (str[g] == ' ')
+    {
+        for (int j = 0; j < strlen(str); j++)
+        {
+            str[j] = str[j + 1];
+        }
+    }
+
+    for (int i = 0; i<strlen(str); i++) 
+    {
+        if ((str[i] == ' ') && (str[i + 1] == ' '))
+        {
+            for (int k = (i + 1); k < strlen(str); k++)
+            {
+                str[k] = str[k + 1];
+                i = 0;
+            }
+            continue;
+        }
+    }
+    printf("\nCorrect string:%s", str);
+    getchar();
     return 0;
 }
