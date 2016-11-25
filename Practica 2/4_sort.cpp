@@ -33,14 +33,16 @@ int main()
     char exchange2;
     //permutation of characters
     for (int i = 0; i < len; i++)
+    {
         if (newstr[i] < '0' || newstr[i] > '9')
         {
             exchange2 = newstr[i];
             ex[0] = exchange2;
             strcat(newstring1, ex);
         }
+    }
     for (int j = 0; j <len; j++)
-    if (newstr[j] >= '0' && newstr[j] <= '9')
+        if (newstr[j] >= '0' && newstr[j] <= '9')
         {
             exchange2 = newstr[j];
             ex[0] = exchange2;
