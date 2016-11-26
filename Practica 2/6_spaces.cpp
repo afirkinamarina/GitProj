@@ -8,9 +8,8 @@ int main()
     char str[len] = "";
     printf("Enter the string:");
     fgets(str, len, stdin);
-    int g = 0;
 
-    while (str[g] == ' ')
+    while (str[0] == ' ')
     {
         for (int j = 0; j < strlen(str); j++)
         {
