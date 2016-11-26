@@ -18,24 +18,23 @@ int main()
             case 0:
                 s1[i][k] = rand() % ('z' - 'a') + 'a';
                 count1++;
-                putchar(s1[i][k]);
                 break;
             case 1:
                 s1[i][k] = (rand() % ('Z' - 'A') + 'A');
                 count2++;
-                putchar(s1[i][k]);
                 break;
             case 2:
                 s1[i][k] = (rand() % ('9' - '0') + '0');
                 count3++;
-                putchar(s1[i][k]);
             }
         }
-        printf(" mal%i, bol%i, cifr%i\n", count1, count2, count3);
 
         if (count1 == 0 || count2 == 0 || count3 == 0)
         {
             i--;
+            count1 = 0;
+            count2 = 0;
+            count3 = 0;
             continue;
         }
 
@@ -52,5 +51,4 @@ int main()
     }
     getchar();
     return 0;
-
 }
