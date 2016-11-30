@@ -1,14 +1,13 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<locale.h>
+#include <stdio.h>
+#include <stdlib.h>
+
 int main()
 {
     char name[30][150];
-    int age[30] = {0};
+    int age[30] = { 0 };
     int *old_age, *young_age;
     char *old_name, *young_name;
     int i = 0, n;
-    setlocale(LC_ALL, "rus");
     printf("Enter the number of family members: ");
     scanf("%i", &n);
     printf("Enter the name and age (Name Age):\n");
@@ -45,11 +44,11 @@ int main()
     }
 
     printf("\n");
-    printf("The yongest - %s ", young_name);
-    printf("His age - %i", *young_age);
+    printf("The yongest - %s, ", young_name);
+    printf("his age - %i", *young_age);
     printf("\n");
-    printf("The oldest - %s ", old_name);
-    printf("His age - %i ", *old_age);
+    printf("The oldest - %s, ", old_name);
+    printf("his age - %i ", *old_age);
     printf("\n");
     system("pause");
     return 0;
