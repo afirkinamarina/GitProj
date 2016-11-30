@@ -3,19 +3,72 @@
 #include <time.h>
 #include <stdlib.h>
 #define N 100
+#define LEN 100
+
+void chomp(char buf[]);
+int funct2(char *str);
+
+int main()
+{
+    FILE *mf;
+    char *pc[N], str[N][LEN];
+    int k = 0;
+    char *estr;
+
+    printf("Open : ");
+    mf = fopen("D:/test.txt", "r");
+
+    if (mf == NULL)
+    {
+        printf("Error\n");
+        getchar();
+        return -1;
+    }
+    else
+        printf("Ok\n");
+
+    printf("Strings: \n");
+    while (1)
+    {
+        estr = fgets(str[k], sizeof(str[k]), mf);
+        chomp(str[k]);
+        funct2(estr);
+        if (estr == NULL)
+        {
+            if (feof(mf) != 0)
+            {
+                printf("\nFile end\n");
+                break;
+            }
+            else
+            {
+                printf("\nError\n");
+                break;
+            }
+        }
+        printf("\n");
+        pc[k] = str[k];
+        k++;
+    }
+    printf("Close : ");
+    if (fclose(mf) == EOF) printf("error\n");
+    else printf("ok\n");
+
+    getchar();
+    return 0;
+}
+
 
 void chomp(char buf[])
 {
     if (buf[strlen(buf) - 1] == '\n')
         buf[strlen(buf) - 1] = 0;
 }
-int main()
+
+int funct2(char *str)
 {
     int i = 0, x, y;
-    char str[N], str1[N], *ptr[50];
-    printf("Enter a line of the text\n");
-    fgets(str, N, stdin);
-    chomp(str);
+    char str1[N], *ptr[50];
     ptr[i] = strtok(str, " ");
     while (ptr[i] != NULL)
     {
@@ -36,6 +89,5 @@ int main()
         }
         printf("%s ", str1);
     }
-    getchar();
     return 0;
 }
