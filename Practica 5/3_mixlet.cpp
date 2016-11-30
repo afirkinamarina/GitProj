@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <ctype.h>
 #include <string.h>
 #include <time.h>
-#include <conio.h>
 #include <stdlib.h>
 #define N 100
 #define LEN 100
+
 void chomp(char buf[]);
 int funct1(char *ptr[50], int i);
 int funct2(char *str);
@@ -48,9 +47,9 @@ int main()
                 break;
             }
         }
-       printf("%s \n", str[k]);
-       pc[k] = str[k];
-       k++;
+        printf("\n");
+        pc[k] = str[k];
+        k++;
     }
     printf("Close : ");
     if (fclose(mf) == EOF) printf("error\n");
@@ -59,6 +58,8 @@ int main()
     getchar();
     return 0;
 }
+
+
 void chomp(char buf[])
 {
     if (buf[strlen(buf) - 1] == '\n')
@@ -66,15 +67,16 @@ void chomp(char buf[])
 }
 int funct1(char *ptr[50], int i)
 {
-    char  parr[100] = { 0 };
+    char  parr[N] = { 0 };
     int dup_flag;
     int rand_val;
-    for (int j = 0; j<i; j++) {
+    for (int j = 0; j < i; j++)
+    {
         for (; ; )
         {
             rand_val = rand() % i;
             dup_flag = 0;
-            for (int k = 0; k<j; k++)
+            for (int k = 0; k < j; k++)
             {
                 if (rand_val == parr[k])
                 {
@@ -92,7 +94,6 @@ int funct1(char *ptr[50], int i)
     }
     return 0;
 }
-
 int funct2(char *str)
 {
     int i = 0;
