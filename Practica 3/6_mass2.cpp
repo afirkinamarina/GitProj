@@ -2,35 +2,33 @@
 #include <conio.h>
 #include <stdlib.h>
 #include <time.h>
+#define N 10
 
 int main()
 {
-    const int n = 10;
-    int arr[n] = { 0 };
-    int num = 0, halfpls = 5, halfmin = 5, mincoun = 0, plscoun = 0, i = 0;
+    int arr[N] = { 0 };
+    int num = 0, halfpls = 5, halfmin = 5, mincoun = 0, plscoun = 0;
     srand(time(NULL));
-    while (i < 10)
+    for (int i = 0; i< N; i++)
     {
         num = rand() % 200 - 100;
         if ((num < 0) && (mincoun < halfmin))
         {
             arr[i] = num;
             mincoun++;
-            i++;
         }
         if ((num >= 0) && (plscoun < halfpls))
         {
             arr[i] = num;
             plscoun++;
-            i++;
         }
     }
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < N; i++)
         printf("%d ", arr[i]);
 
 
     int min = 0, pls = 0, counter = 0, id = 0, id1 = 0;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < N; i++)
     {
         if (arr[i] < 0)
         {
@@ -41,7 +39,7 @@ int main()
             }
         }
     }
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < N; i++)
     {
         if (arr[i] > 0)
         {
@@ -54,9 +52,9 @@ int main()
     }
     if (id1 < id)
     {
-    for (int k = id1 + 1; k < id; k++)
-        counter = counter + arr[k];
-}
+        for (int k = id1 + 1; k < id; k++)
+            counter = counter + arr[k];
+    }
     else
     {
         for (int k = id + 1; k < id1; k++)
